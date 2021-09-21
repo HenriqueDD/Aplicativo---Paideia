@@ -10,7 +10,6 @@ import Aulas from './src/pages/Aulas';
 const Drawer = createDrawerNavigator();
 
 
-
 export default function App() {
   return (
     <NavigationContainer>
