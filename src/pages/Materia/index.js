@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, ScrollView, StyleSheet } from 'react-native';
 import { NativeBaseProvider, Box, Progress, Heading, Link, extendTheme } from "native-base";
 
+
 export default function Materia({ navigation }) {
     return (
         <NativeBaseProvider>
@@ -34,7 +35,7 @@ export default function Materia({ navigation }) {
                             <Text>Progresso: 10%</Text>
                             <Text>Data: 10 abril</Text>
 
-                            <Progress value={45} mx="30" bg="cyan.200" mb="4" />
+                            <Progress />
                         </Box>
                     </Link>
                 </View>
@@ -58,7 +59,7 @@ export default function Materia({ navigation }) {
                             <Text>Data: 10 abril</Text>
 
 
-                            <Progress value={45} mx="30"  bg="cyan.200" mb="4" />
+                            <Progress  />
                         </Box>
                     </Link>
                 </View>
@@ -67,11 +68,6 @@ export default function Materia({ navigation }) {
 
 
     )
-
-
-
-
-
 }
 
 const styles = StyleSheet.create({
@@ -95,18 +91,3 @@ const styles = StyleSheet.create({
 
 })
 
-const theme = extendTheme({
-    components: {
-        Progress: {
-            baseStyle: {
-                color: 'black.200'
-
-            },
-            defaultProps: {},
-            variants: {},
-            sizes: {
-
-            }
-        }
-    }
-})
